@@ -16,7 +16,7 @@ def input_path(date: str, depth: int = 0) -> list:
 
 def define_new_tags(starting_date, depth):
     spark = SparkSession.builder \
-        .appName("TestSession") \
+        .appName("NewTags") \
         .config("spark.executor.memory", "8g") \
         .config("spark.driver.memory", "4g") \
         .master("local[6]") \
